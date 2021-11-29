@@ -1,0 +1,161 @@
+body{
+	/* background: #0000ff; */
+	/* Hexadecimal #123456 */
+	/*  RGB */
+	/* Color básicos van de 0 A F 
+	Sistema hexadecimanl
+	
+	*/
+	/* blanco  */
+	/* color: #ffffff; */
+	/* negro  */
+	/* color: #000000; */
+	/* Rojo */
+	/* color: #FF0000; */
+	/* verde */
+	/* color: #00ff00; */
+
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 30px;
+}
+/* Quitar estilos brindados por defecto  */
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* propiedades de texto */
+/* Etiquetas */
+/* MEDIDAS para los elementos px, % ,  */
+/* MEDIDAS para los textos px, rem, em  */
+
+
+
+h1, h2, h3, h4, h5, h6, p{
+	text-align: center;
+}
+
+
+/* id seleccionar una*/
+#contenedor-imagen{
+	display: flex;
+	justify-content: center;
+}
+#imagen-internet{
+	filter:opacity(0.7);
+}
+
+/* Clases para seleccionar varias con características en común */
+
+.imagen{
+	border-radius: 20px;
+	width: 300px;
+	height: 300px;
+	background: red;
+	padding:  10px 20px;
+	/* margin-right: 50px;  */
+	margin: 0 50px 0 0; 
+}
+
+#light{
+	font-weight: 100;
+}
+
+#medium{
+	font-weight: 300;
+}
+
+#bold{
+	font-weight: 700;
+}
+
+#extra-bold{
+	font-weight:900;
+}
+
+#rectangulo{
+	width: 100%;
+	height: 300px;
+	background-color: darkgoldenrod;
+	position: relative;
+}
+
+#circulo{
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color:cornflowerblue;
+	position: absolute;
+	/* top, right, left, bottom */
+
+	top: calc(50% - 48px);
+	left: calc(50% - 48px);
+	z-index: 101;
+}
+#circulo-2{
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color:rgb(25, 62, 131);
+	position: absolute;
+	/* top, right, left, bottom */
+
+	top: calc(50% - 24px);
+	left: calc(50% - 24px);
+	z-index: 100;
+}
+
+/* 0 hasta 768 px */
+
+@media screen and (max-width: 768px){
+	aside{
+		background: red;
+	}
+
+	header, main, aside, footer{
+		width: 100%;
+	}
+}
+/* 768px en adelante */
+
+@media screen and (min-width: 768px){
+	
+	aside{
+		background: blue;
+	}
+
+	header{
+	width: 100%;
+	height: 200px;
+	background: black;
+	color: white;
+	}
+	header nav ul{
+		display: inline;
+		width: 100%;
+	}
+	main{
+		width: 80%;
+		height: 800px;
+		background: #08cf01;
+	}
+
+	aside{
+		width: 20%;
+		height: 800px;
+		background: #2218ac;
+		background-image: url(../img/450_1000.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
+	footer{
+		width: 100%;
+		height: 200px;
+		background-color: #ff6600;
+	}
+}
+
